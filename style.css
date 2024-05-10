@@ -67,7 +67,6 @@ p {
     width: min(112rem, 100%);
     gap: 2.5rem;
     margin: 0 auto;
-    border: 1px solid blue;
 }
 
 main {
@@ -136,12 +135,14 @@ form .input-wrapper {
     border-radius: 50%;
 }
 
-.gallery {
-    /* margin-top: 3.2rem; */
-    /* width: 38.2rem; */
-    /* height: 8.4rem; */
-    border: 1px solid red;
 
+.article {
+    display: flex;
+    flex-direction: row;
+}
+
+.article div+div {
+    margin-left: 16px;
 }
 
 .item {
@@ -151,15 +152,14 @@ form .input-wrapper {
     justify-content: center;
     align-items: center;
     grid-auto-rows: auto;
-    border: 1px solid green;
 
 
 }
 
-.item .pic {
+.pic {
     overflow: hidden;
     object-fit: cover;
-
+    height: 84px;
 }
 
 .pic {
